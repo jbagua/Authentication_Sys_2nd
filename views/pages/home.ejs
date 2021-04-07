@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body{
+            background-image: url("/Images/image3.jfif");
+        }
+        h1{
+            font-size: 40px;
+            font-family: Bell MT;
+            color: white;
+            text-align: center;
+        }
+        h2{
+            font-size: 20px ;
+            font-family: Bell MT;
+            color: rgb(12, 12, 12);
+            text-align: center;
+        }
+        h3{
+            font-family:Kristen ITC;
+            font-size: 25px;
+            text-align: center;
+        }
+        form{
+
+            text-align: center;
+              
+        }
+        #page {
+            display: flex;
+            justify-content: center;
+          }
+        main {
+              display: block;
+              border-radius: 8px;
+              padding:25px;
+              background-color: rgba(159, 196, 159,0.3);
+              width: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome Elite Huntsman</h1>
+<h2>Come on, look at this cool link if you are logged in</h2>
+<h3><a href="/supercoolmembersonlypage">don't you want to be a huntsman...come explore</a></h3>
+<div id ="page">
+<main>
+<h2>Create Account</h2>
+<form action="/create" method="POST">
+<input type="text" name="username" placeholder="username"> <br>
+<input type="text" name="password" placeholder="password"> <br>
+<button type="submit">Submit</button>
+</form>
+
+<h2>Login</h2>
+<form action="/login" method="POST">
+<input type="text" name="username" placeholder="username"> <br>
+<input type="text" name="password"placeholder="password"> <br>
+<button type="submit">login</button>
+</form>
+
+<h2>Logout</h2>
+<form action="/logout" method="POST">
+<button type="submit">logout</button>
+</form>
+</main>
+</div>
+    
+</body>
+</html>
